@@ -14,7 +14,7 @@ import { ref, computed } from 'vue'
 
 const data = ref([])
 
-fetch('/data.txt')
+fetch('data.txt')
 	.then(resp => resp.text())
 	.then(text => {
 		data.value = text
