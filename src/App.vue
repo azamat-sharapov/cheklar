@@ -2,9 +2,9 @@
 	<input type="text" placeholder="Raqam" v-model="keyword" />
 
 	<ul>
-		<li v-for="[ fiskal, raqam ] in items">
-			<div>{{ raqam }}</div>
-			<div>{{ fiskal }}</div>
+		<li v-for="[ fiskal, raqam ] in items" style="margin-bottom: 1rem">
+			<div style="font-weight: bold">{{ raqam }}</div>
+			<div style="color: gray">{{ fiskal }}</div>
 		</li>
 	</ul>
 </template>
